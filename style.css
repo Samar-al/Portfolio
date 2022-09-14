@@ -1,0 +1,94 @@
+body{
+    background-color: rgb(52, 52, 64);
+    
+}
+
+h1{
+    font-size: 4em;
+    color: white;
+}
+h2{
+    font-size: 8em;
+    color: white;
+    padding-left: 4%;
+}
+p{
+    color: white;
+    font-size: 1em;
+}
+#presentation{
+    position: relative;
+    padding-left: 5em;
+    padding-top: 12em;
+    
+   
+}
+
+#skills .card-group .card .card-img-top{
+    width: 80px;
+    position: relative;
+    margin: auto;
+   
+}    
+   
+#skills .card-group .card{
+    border: none;
+    background-color: transparent;
+}
+#skills .card-group .card .card-title{
+    text-align: center;
+    color: white;
+}
+#skills{
+    display: flexbox;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    top: 8em;
+    
+}
+
+.p-lang{
+    position: relative;
+    left: 5em;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+#projects{
+    
+    position: relative;
+    top: 350px;
+
+    
+}
+.class-card-text{
+    color: black;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+#contact{
+    position: relative;
+    top: 650px;
+   
+
+}
+#projects .card-group{
+    width: 80%;
+    height: auto;
+   
+    
+}
+#projects .card-group .card{
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  padding: 14px 80px 18px 36px;
+  cursor: pointer;
+}
+#projects .card-group .card:hover{
+    transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);    
+
+}
