@@ -143,13 +143,16 @@ footer h5{
 }
 
 
-@media screen and (max-width:1150px ) {
+@media screen and (max-width:1570px ) {
     .presentation, .skills{
         padding: 2em;
         left: -2em;
     }
     .contact{
         padding-right: 2em;
+    }
+    .card-project{
+        flex-direction: column;
     }
     
     .proj{
