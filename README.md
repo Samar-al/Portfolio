@@ -26,3 +26,4 @@ Occasionally, there are additional pages for each project, detailing the technol
 </ul>
 
 <h2>Page</h2>
+https://samar-al.github.io/Portfolio/
