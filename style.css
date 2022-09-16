@@ -2,93 +2,187 @@ body{
     background-color: rgb(52, 52, 64);
     
 }
-
 h1{
-    font-size: 4em;
     color: white;
+    font-size: 30px;
 }
 h2{
-    font-size: 8em;
     color: white;
-    padding-left: 4%;
+    font-size: 80px;
 }
 p{
     color: white;
-    font-size: 1em;
 }
-#presentation{
+.presentation{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     position: relative;
-    padding-left: 5em;
-    padding-top: 12em;
-    
+    margin-left: 4em; 
+    top: 4em;
    
-}
-
-#skills .card-group .card .card-img-top{
-    width: 80px;
-    position: relative;
-    margin: auto;
-   
-}    
-   
-#skills .card-group .card{
-    border: none;
-    background-color: transparent;
-}
-#skills .card-group .card .card-title{
-    text-align: center;
-    color: white;
 }
 #skills{
-    display: flexbox;
-    flex-wrap: wrap;
+    position: relative;
+    top: 10em;
+    margin-left: 4em;
+    margin-right: 4em;
+    color:  rgb(52, 52, 64);
+   background-color: white;
+}
+#skills h2{
+    color:rgb(52, 52, 64);
+}
+.technos{
+    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     position: relative;
-    top: 8em;
+    margin-top: 4em;
+   
+   
+}
+.techno{
+    align-self: center;
+    border: 2px solid white;
+    width: 8em;
+    height: 9em;
+    text-align: center;
+}
+.techno img{
+    width: 5em;
+    height: 6em;
+    align-self: center;
+    padding: 6px;
     
 }
-
-.p-lang{
+#project{
     position: relative;
-    left: 5em;
-    text-decoration: underline;
-    font-size: 20px;
+    top: 16em;
+    margin-left: 4em;
+    color: white;
 }
 
-#projects{
-    
+.card-project{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     position: relative;
-    top: 350px;
-
-    
+    margin-top: 4em;
 }
-.class-card-text{
+.proj{
+    width: 30em;
+    height: 60em;
+    border: 2px solid white;
+    text-align: center;
+    background-color: azure;
     color: black;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    border-radius: 5%;
+    align-self: center;
+} 
+.proj:hover{
+    box-shadow: 10px 10px 8px #888888;
+    z-index: 2;
+}
 
+.proj p{
+    color: black;
+    padding: 4em 1em 0 1em;
+}
+.proj img{
+    width: 24em;
+    height: 23em;
 }
 #contact{
     position: relative;
-    top: 650px;
-   
+    top: 25em;
+    margin-left: 4em;
+    color: white;
+    padding-bottom: 10em;
+}
+.form{
+    position: relative;
+    margin-top: 3em;
+    margin-left: 4em;
 
 }
-#projects .card-group{
-    width: 80%;
-    height: auto;
-   
+form input{
+    width: 460px;
+}
+#button{
+    color: black;
+    background-color: #888888;
+    border: none;
+    border-radius: 10%;
+    width: 80px;
+    margin-left: 10em;   
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
     
 }
-#projects .card-group .card{
-    border-radius: 4px;
-    background: #fff;
-    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-  padding: 14px 80px 18px 36px;
-  cursor: pointer;
+footer h5{
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    color: #888888;
 }
-#projects .card-group .card:hover{
-    transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);    
+.cme{
+    display: flex;
+    justify-content: center;
+   
+}
 
+.cme .cont{
+    padding-inline: 3em;
+}
+
+
+@media screen and (max-width:1150px ) {
+    .presentation, .skills, .contact {
+        padding: 3em;
+        left: 0;
+    }
+    .proj{
+        margin-left: -4em;
+    }
+    .technos, .proj{
+        flex-direction: column;
+        align-items: space-around;
+        height: 100%;
+        margin-top: 2em;
+
+    }
+    .techno{
+        margin-top: 2em;
+        justify-self: center;
+    }
+
+    .form input{
+        width: 50%;
+    }
+    .form textarea{
+        width: 80%;
+
+    }
+    #button{
+        width: 20%;
+    }
+    footer{
+        padding: 1em;
+    }
+}
+
+#canvas {
+	position: fixed;
+	z-index: -1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
 }
