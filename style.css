@@ -144,12 +144,22 @@ footer h5{
 
 
 @media screen and (max-width:1150px ) {
-    .presentation, .skills, .contact {
-        padding: 3em;
-        left: 0;
+    .presentation, .skills{
+        padding: 2em;
+        left: -2em;
     }
+    .contact{
+        padding-right: 2em;
+    }
+    
     .proj{
         margin-left: -4em;
+        width: 20em;
+        height: auto;
+    }
+    .proj img{
+        width: 14em;
+        height: 13em;
     }
     .technos, .proj{
         flex-direction: column;
@@ -158,11 +168,16 @@ footer h5{
         margin-top: 2em;
 
     }
+    .contact h3{
+        font-size: 1em;
+    }
     .techno{
         margin-top: 2em;
         justify-self: center;
     }
-
+    form{
+        margin-left: -4em;
+    }
     .form input{
         width: 50%;
     }
@@ -171,7 +186,8 @@ footer h5{
 
     }
     #button{
-        width: 20%;
+        width: 25%;
+        margin-left: 5em;
     }
     footer{
         padding: 1em;
