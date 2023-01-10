@@ -1,80 +1,36 @@
-
 let item1 = document.getElementById("html");
 let item2 = document.getElementById("css");
 let item3 = document.getElementById("javascript");
 let item4 = document.getElementById('php');
 let item5 = document.getElementById('bootstrap');
+let item6 = document.getElementById('Laravel');
+let item7 = document.getElementById('MySql');
+let item8 = document.getElementById('Git/GitHub');
+let item9 = document.getElementById('Symfony');
+let item10 = document.getElementById('APIRest');
 
+const items = [item1, item2, item3, item4, item5, item6, item7, item8, item9, item10];
 
-function change1(){
-    item1.style.backgroundColor = "#888888";
-    item1.style.color = "black";
-    item1.style.fontStyle = "italic";
-}
-function changeBack1(){
-    item1.style.backgroundColor = "";
-    item1.style.color = "";
-    item1.style.fontStyle = "";
-}
+for(const item of items){
 
-item1.addEventListener("mouseover", change1);
-item1.addEventListener("mouseleave", changeBack1);
-
-function change2(){
-    item2.style.backgroundColor = "#888888";
-    item2.style.color = "black";
-    item2.style.fontStyle = "italic";
-}
-function changeBack2(){
-    item2.style.backgroundColor = "";
-    item2.style.color = "";
-    item2.style.fontStyle = "";
-}
-
-item2.addEventListener("mouseover", change2);
-item2.addEventListener("mouseleave", changeBack2);
-
-function change3(){
-    item3.style.backgroundColor = "#888888";
-    item3.style.color = "black";
-    item3.style.fontStyle = "italic";
-}
-function changeBack3(){
-    item3.style.backgroundColor = "";
-    item3.style.color = "";
-    item3.style.fontStyle = "";
+	function change(){
+		item.style.backgroundColor = "#888888";
+		item.style.color = "black";
+		item.style.fontStyle = "italic";
+		item.style.borderRadius = "40%";
+	}
+	function changeBack(){
+		item.style.backgroundColor = "";
+		item.style.color = "";
+		item.style.fontStyle = "";
+		item.style.borderRadius = "";
+	}
+	
+	item.addEventListener("mouseover", change);
+	item.addEventListener("mouseleave", changeBack);
 }
 
-item3.addEventListener("mouseover", change3);
-item3.addEventListener("mouseleave", changeBack3);
 
-function change4(){
-    item4.style.backgroundColor = "#888888";
-    item4.style.color = "black";
-    item4.style.fontStyle = "italic";
-}
-function changeBack4(){
-    item4.style.backgroundColor = "";
-    item4.style.color = "";
-    item4.style.fontStyle = "";
-}
-
-item4.addEventListener("mouseover", change4);
-item4.addEventListener("mouseleave", changeBack4);
-
-function change5(){
-    item5.style.backgroundColor = "#888888";
-    item5.style.color = "black";
-    item5.style.fontStyle = "italic";
-}
-function changeBack5(){
-    item5.style.backgroundColor = "";
-    item5.style.color = "";
-    item5.style.fontStyle = "";
-}
-
-item5.addEventListener("mouseover", change5);
-item5.addEventListener("mouseleave", changeBack5);
 
 
 /*mouse ball animation by Renato Ribeiro*/
@@ -166,3 +122,6 @@ window.addEventListener("DOMContentLoaded", init);
 window.addEventListener("resize", resizeReset);
 window.addEventListener("mousemove", mousemove);
 window.addEventListener("mouseout", mouseout);
+
+/*FORM*/
+
