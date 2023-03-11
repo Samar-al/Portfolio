@@ -125,3 +125,12 @@ window.addEventListener("mouseout", mouseout);
 
 /*FORM*/
 
+const form = document.getElementById('contact-form');
+  form.addEventListener('submit', (event) => {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+
+    // Reset the form fields to their default values
+    form.reset();
+  });
+
