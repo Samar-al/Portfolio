@@ -126,11 +126,30 @@ window.addEventListener("mouseout", mouseout);
 /*FORM*/
 
 const form = document.getElementById('contact-form');
-  form.addEventListener('submit', (event) => {
-    // Prevent the default form submission behavior
-    event.preventDefault();
-
-    // Reset the form fields to their default values
-    form.reset();
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const formData = new FormData(form);
+  const formAction = form.getAttribute('action');
+  const formMethod = form.getAttribute('method');
+  fetch(formAction, {
+    method: formMethod,
+    body: formData,
+    headers: {
+      'Accept': 'application/json'
+    }
+  })
+  .then(response => {
+    if (response.ok) {
+      alert('Thank you for your message!');
+      form.reset();
+    } else {
+      alert('There was a problem submitting your message.');
+    }
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    alert('There was a problem submitting your message.');
   });
+});
+
 
